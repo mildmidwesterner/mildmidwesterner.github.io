@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} — FPGA SPI Emulator</title>
+    <meta name="description" content="{{ description | default('FPGA SPI peripheral emulation for firmware and hardware-in-the-loop testing.') }}">
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <div class="layout">
+      <aside id="sidebar">
+        <div class="brand"><h1>Horse-on-HIL</h1><p>:peripheral emulator for test automation</p></div>
+        <nav>
+          {% for item in collections.docs %}
+            {% if item.url == "/" %}
+              <a href="{{ item.url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.data.nav | default(item.data.title) }}</a>
+            {% endif %}
+          {% endfor %}
+          <a href="/demo/"{% if page.url == "/demo/" %} class="active"{% endif %}>Demo</a>
+          <a href="/get-hardware/"{% if page.url == "/get-hardware/" %} class="active"{% endif %}>Get Hardware</a>
+          <a href="/hardware-setup/"{% if page.url == "/hardware-setup/" %} class="active"{% endif %}>Hardware Setup</a>
+          <a href="/quick-start/"{% if page.url == "/quick-start/" %} class="active"{% endif %}>Quick Start</a>
+          <a href="/ping/"{% if page.url == "/ping/" %} class="active"{% endif %}>Example01. Ping</a>
+          <a href="/spi-read-write/"{% if page.url == "/spi-read-write/" %} class="active"{% endif %}>Example02. SPI r/w</a>
+          <a href="/data-capture/"{% if page.url == "/data-capture/" %} class="active"{% endif %}>Example03. Data Capture</a>
+          <a href="/capabilities/"{% if page.url == "/capabilities/" %} class="active"{% endif %}>API Reference</a>
+          <a href="/contact/"{% if page.url == "/contact/" %} class="active"{% endif %}>Contact</a>
+          {% for item in collections.docs %}
+            {% if item.url != "/" and item.url != "/demo/" and item.url != "/quick-start/" and item.url != "/capabilities/" and not item.data.navExclude %}
+              <a href="{{ item.url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.data.nav | default(item.data.title) }}</a>
+            {% endif %}
+          {% endfor %}
+        </nav>
+      </aside>
+      <main>
+        {% if downloads %}
+          <div class="download-buttons">
+            {% for item in downloads %}<a class="download-button" href="{{ item.url }}" download>Download {{ item.name }}</a>{% endfor %}
+          </div>
+        {% elif download %}<a class="download-button" href="{{ download }}" download>Download {{ downloadName | default('file') }}</a>{% endif %}
+        <article>{{ content | safe }}</article>
+      </main>
+    </div>
+    <script src="/assets/app.js"></script>
+  </body>
+</html>
