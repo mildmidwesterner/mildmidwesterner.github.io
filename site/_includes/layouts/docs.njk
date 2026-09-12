@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="layout">
-      <button id="nav-toggle" class="nav-toggle" type="button" aria-controls="sidebar" aria-expanded="true">Hide navigation</button>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-controls="sidebar" aria-expanded="true" aria-label="Collapse navigation" title="Collapse navigation">×</button>
       <aside id="sidebar">
         <div class="brand"><h1>Horse-on-HIL</h1><p>:peripheral emulator for test automation</p></div>
         <nav>
@@ -26,6 +26,7 @@
           <a href="/spi-read-write/"{% if page.url == "/spi-read-write/" %} class="active"{% endif %}>Example02. SPI r/w</a>
           <a href="/data-capture/"{% if page.url == "/data-capture/" %} class="active"{% endif %}>Example03. Data Capture</a>
           <a href="/capabilities/"{% if page.url == "/capabilities/" %} class="active"{% endif %}>API Reference</a>
+          <a href="/troubleshoot/"{% if page.url == "/troubleshoot/" %} class="active"{% endif %}>Troubleshooting</a>
           <a href="/contact/"{% if page.url == "/contact/" %} class="active"{% endif %}>Contact</a>
           {% for item in collections.docs %}
             {% if item.url != "/" and item.url != "/demo/" and item.url != "/quick-start/" and item.url != "/capabilities/" and not item.data.navExclude %}

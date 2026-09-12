@@ -1,69 +1,67 @@
 ---
+
 layout: layouts/docs.njk
 tags: docs
 navExclude: true
 title: Ping Example
-download: /assets/downloads/01_ping.py
-downloadName: 01_ping.py
 ---
 
-<div class="eyebrow">Example01</div>
+<div class="eyebrow">Example 01</div>
 
 # Ping
 
-Use Ping to confirm that the computer can communicate with the emulator board over USB before running an SPI test. 
+Use Ping to verify communication between the computer and RH01T9k over the USB serial control connection.
 
-A successful Ping verifies that the board is connected, responding, and ready to receive commands from the Python API.
+A successful Ping confirms that the board is connected and responding to commands from the Python API.
 
-## Hardware setup
+## Connect the board
 
-- 1× RH01T9k SPI emulator
-- 1× computer
-- 1× USB Type-C data cable
+Connect RH01T9k to the computer using a USB Type-C data cable.
 
-Connect the board to the computer with the USB Type-C cable. Confirm that the board powers on. 
+<div class="note"><strong>Note:</strong> Use a USB cable that supports data. A charge-only cable can power the board but cannot provide serial communication.</div>
 
-<div class="note"><strong>Caution:</strong> Close any serial terminal, IDE monitor, or other program that may already be using the board's connection.</div>
-
-<div class="note"><strong>Caution:</strong> A charge-only USB cable can power the board but cannot transfer data. </div>
+Close any serial terminal, IDE monitor, or other program using the same serial port.
 
 ## Find the serial port
 
-On Windows, open **Device Manager → Ports (COM & LPT)** and find the device added when the board was connected. It may look like `USB Serial Device (COM7)`.
+On Windows, open **Device Manager → Ports (COM & LPT)** and identify the port assigned to the board, for example:
 
-On macOS, run this command before and after connecting the board:
+```text
+COM7
+```
+
+On macOS, compare the output of:
 
 ```sh
 ls /dev/cu.*
 ```
 
-Use the newly listed `/dev/cu.*` path, such as `/dev/cu.usbserial-XXXX`.
+before and after connecting the board. The new device may appear as:
 
-## Run the test
+```text
+/dev/cu.usbserial-XXXX
+```
 
-Set the port for your board and keep the baud rate at `115200`:
+## Run Ping
+
+Set `PORT` to the serial port assigned to the board.
+
+The UART control baud rate is fixed at `115200`. This is separate from the SPI clock rate.
 
 ```python
 from hil import HIL
 
-PORT = "COM7"
-BAUD = 115200
+PORT = "COM7"      # Set assigned serial port
+BAUD = 115200      # Required — do not change
+
 
 with HIL(PORT, BAUD) as dev:
     dev.ping()
     print("PING OK")
-    
+
     status = dev.get_status()
     print(f"status = 0x{status.raw:04X}")
 ```
-
-The baud rate is the physical UART speed between the computer and the emulator board. It is not the SPI clock rate. 
-
-<div class="note"><strong>Caution:</strong> Keep the baud rate set to 115200. </div>
-
-<div class="note"><strong>Caution:</strong> Confirm that the selected port belongs to the emulator board. </div>
-
-<div class="note"><strong>Note:</strong> If the status reports communication errors, clear the errors and run Ping again before continuing with SPI tests.</div>
 
 ## Expected result
 
@@ -74,6 +72,6 @@ PING OK
 status = 0x8000
 ```
 
-`PING OK` confirms the emulator board is connected and responding to commands from the Python API. 
+`PING OK` confirms that RH01T9k responded to the Python API.
 
-The status value may change depending on the current board state. 
+The status value may vary depending on the current board state.

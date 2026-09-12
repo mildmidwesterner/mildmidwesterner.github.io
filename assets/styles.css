@@ -46,11 +46,13 @@
       top: 14px;
       left: calc(var(--sidebar-width) + 12px);
       z-index: 2;
-      padding: 5px 8px;
+      width: 30px;
+      height: 30px;
+      padding: 0;
       color: var(--ink);
       background: #ffffff;
       border: 1px solid var(--line);
-      font: 12px "Times New Roman", Times, serif;
+      font: 22px/1 "Times New Roman", Times, serif;
       cursor: pointer;
     }
 

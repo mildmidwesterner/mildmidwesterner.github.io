@@ -3,7 +3,9 @@ const toggle = document.querySelector("#nav-toggle");
 function setNavigationCollapsed(collapsed) {
   document.body.classList.toggle("nav-collapsed", collapsed);
   toggle.setAttribute("aria-expanded", String(!collapsed));
-  toggle.textContent = collapsed ? "Show navigation" : "Hide navigation";
+  toggle.textContent = collapsed ? "☰" : "×";
+  toggle.setAttribute("aria-label", collapsed ? "Show navigation" : "Collapse navigation");
+  toggle.setAttribute("title", collapsed ? "Show navigation" : "Collapse navigation");
   localStorage.setItem("navigation-collapsed", String(collapsed));
 }
 

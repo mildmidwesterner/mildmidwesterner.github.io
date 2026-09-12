@@ -1,12 +1,10 @@
 ---
+
 layout: layouts/docs.njk
 tags: docs
 title: Quick Start
 nav: Quick Start
 navExclude: true
-downloads:
-  - name: redhorse_hil-0.1.0-py3-none-any.whl
-    url: /assets/downloads/redhorse_hil-0.1.0-py3-none-any.whl
 ---
 
 <div class="eyebrow">Getting Started</div>
@@ -23,28 +21,26 @@ Connect the RH01T9k to the computer using a USB Type-C data cable. Confirm that 
 
 <div class="note"><strong>Note:</strong> Close any serial terminal, IDE monitor, or other program that may already be using the board's serial port.</div>
 
-
 ## 2. Install the Python API
 
-RedHorse HIL supports Python 3.9 and newer. The package installs as `redhorse-hil` and imports in Python as `hil`.
+The RH01T9k Python API is open source and available on GitHub:
 
-### Option 1: Install with pip
+[RH01T9k Python API](https://github.com/mildmidwesterner/programmable-spi-slave-emulator/tree/main/python)
 
-The package is available from PyPI:
+The API supports Python 3.9 and newer.
 
-```bash
-python -m pip install redhorse-hil
-```
-
-### Option 2: Install the downloadable wheel
-
-Alternatively, download `redhorse_hil-0.1.0-py3-none-any.whl` from this page, then run:
+Clone the repository:
 
 ```bash
-python -m pip install redhorse_hil-0.1.0-py3-none-any.whl
+git clone https://github.com/mildmidwesterner/programmable-spi-slave-emulator.git
 ```
 
-The wheel installs the API and its required Python dependencies.
+Then install the Python package:
+
+```bash
+cd programmable-spi-slave-emulator/python
+python -m pip install .
+```
 
 
 ## 3. Find the serial port
@@ -60,7 +56,6 @@ macOS:    /dev/cu.usbserial-...
 ```
 
 The exact name depends on the operating system and connected USB-UART interface.
-
 
 ## 4. Run Ping
 
@@ -99,15 +94,6 @@ status = 0x....
 
 If Ping succeeds, the Python API can communicate with the RH01T9k and the board is ready to configure for SPI emulation.
 
-
 ## Next steps
-
-Continue with the examples to:
-
-- configure an emulated SPI register device
-- set initial register values
-- update registers while the emulator is running
-- capture SPI transactions
-- configure capture triggers and limits
 
 See [Hardware Setup](/hardware-setup/) before connecting an SPI controller.
