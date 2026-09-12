@@ -7,6 +7,9 @@ nav: API Reference
 
 <div class="eyebrow">Python API</div>
 
+# Python API Guide
+A reference for the Python API calls available for controlling RH01T9k.
+
 ## 1. Create a board connection
 
 ```python
