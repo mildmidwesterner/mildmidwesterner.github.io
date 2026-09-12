@@ -5,9 +5,8 @@ tags: docs
 title: Contact
 nav: Contact
 navExclude: true
-----------------
-
-<div class="eyebrow">Contact</div>
+---
+<div class="eyebrow">Email me</div>
 
 # Get in touch
 

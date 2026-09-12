@@ -6,6 +6,8 @@ title: Troubleshooting
 navExclude: true
 ---
 
+<div class="eyebrow">Support</div>
+
 # Troubleshooting
 
 Start with a simple connection test:
