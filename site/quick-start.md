@@ -5,6 +5,7 @@ tags: docs
 title: Quick Start
 nav: Quick Start
 navExclude: true
+description: Install the RH01T9k Python API, connect the board over USB, find its serial port, and verify communication with Ping.
 ---
 
 <div class="eyebrow">Getting Started</div>

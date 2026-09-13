@@ -5,10 +5,11 @@ tags: docs
 title: Contact
 nav: Contact
 navExclude: true
+description: Contact the RH01T9k project for hardware requests, setup questions, feedback, feature ideas, and SPI peripheral support.
 ---
 <div class="eyebrow">Email me</div>
 
-# Get in touch
+# Contact
 
 Email [mildmidwesterner@gmail.com](mailto:mildmidwesterner@gmail.com) if you:
 

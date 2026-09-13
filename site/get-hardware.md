@@ -5,6 +5,7 @@ tags: docs
 title: Get Hardware
 nav: Get Hardware
 navExclude: true
+description: Get an RH01T9k board, build the open-source FPGA design, or program a Tang Nano 9K with the RH01T9k bitstream.
 
 downloads:
 

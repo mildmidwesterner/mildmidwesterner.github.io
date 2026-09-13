@@ -4,6 +4,7 @@ layout: layouts/docs.njk
 tags: docs
 title: Troubleshooting
 navExclude: true
+description: Diagnose RH01T9k USB serial, SPI emulation, capture, and connection issues using status flags and practical checks.
 ---
 
 <div class="eyebrow">Support</div>

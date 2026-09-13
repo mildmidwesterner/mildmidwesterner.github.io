@@ -4,7 +4,7 @@ tags: docs
 title: SPI Peripheral Emulator for Firmware Testing
 nav: Overview
 permalink: /
-description: Programmable SPI peripheral emulator for firmware testing, hardware-in-the-loop testing, and automated embedded hardware validation.
+description: Programmable SPI peripheral emulator for testing embedded firmware with repeatable register responses, hardware-in-the-loop testing, and automation.
 ---
 
 <div class="eyebrow">Overview</div>

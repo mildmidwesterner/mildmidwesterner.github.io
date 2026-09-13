@@ -4,6 +4,7 @@ layout: layouts/docs.njk
 tags: docs
 navExclude: true
 title: SPI Register Read and Write Example
+description: Configure RH01T9k as a register-based SPI peripheral and test single, burst, and repeated register reads and writes.
 ---
 
 <div class="eyebrow">Example 02</div>

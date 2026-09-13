@@ -5,6 +5,7 @@ tags: docs
 title: Hardware Setup
 nav: Hardware Setup
 navExclude: true
+description: Wire RH01T9k to an SPI controller using the Tang Nano 9K pinout, 3.3 V logic levels, and supported SPI modes.
 ---
 
 <div class="eyebrow">Getting Started</div>

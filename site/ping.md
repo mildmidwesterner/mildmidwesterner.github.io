@@ -4,6 +4,7 @@ layout: layouts/docs.njk
 tags: docs
 navExclude: true
 title: Ping Example
+description: Verify USB serial communication between your computer and RH01T9k with the Python API Ping example.
 ---
 
 <div class="eyebrow">Example 01</div>

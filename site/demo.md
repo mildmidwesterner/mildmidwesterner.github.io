@@ -4,7 +4,7 @@ layout: layouts/docs.njk
 tags: docs
 title: BMI160 SPI Sensor Emulator Demo
 nav: Demo
-description: Replace a BMI160 accelerometer with a programmable SPI emulator and test ESP32 firmware using repeatable sensor data.
+description: Replace a BMI160 sensor with RH01T9k and test unchanged ESP32 firmware using repeatable, programmable SPI accelerometer data.
 ---
 
 <div class="eyebrow">Demo</div>
@@ -487,4 +487,3 @@ with HIL(PORT, BAUD) as dev:
         print()
         print("BMI160 emulator stopped")
 ```
-

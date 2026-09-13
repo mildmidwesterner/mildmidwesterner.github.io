@@ -4,6 +4,7 @@ layout: layouts/docs.njk
 tags: docs
 navExclude: true
 title: SPI Transaction Capture Example
+description: Capture SPI transactions from the physical bus, inspect MOSI and MISO bytes, and troubleshoot embedded firmware behavior.
 ---
 
 <div class="eyebrow">Example 03</div>

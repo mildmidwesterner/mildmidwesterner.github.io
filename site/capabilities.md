@@ -3,6 +3,7 @@ layout: layouts/docs.njk
 tags: docs
 title: API Reference
 nav: API Reference
+description: Reference for Python API calls that connect to RH01T9k, configure SPI emulation, update registers, and capture transactions.
 ---
 
 <div class="eyebrow">Python API</div>
@@ -621,4 +622,3 @@ The event types are:
 - START (`event_type == 0`) — chip select begins a transaction
 - BYTE (`event_type == 1`) — one complete MOSI/MISO byte pair is recorded
 - END (`event_type == 2`) — chip select ends the transaction
-
