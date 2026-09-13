@@ -11,9 +11,9 @@ description: Configure RH01T9k as a register-based SPI peripheral and test singl
 
 # SPI Register Read/Write
 
-This example configures RH01T9k as a register-based SPI peripheral, then performs single and burst register reads and writes from an SPI controller.
+This example configures RH01T9k as a register-based SPI peripheral so you can test an SPI controller without a physical sensor. The controller performs single and burst register reads and writes over a real SPI bus.
 
-<div class="note"><strong>Note:</strong> Complete the [Ping Example](/examples/ping/) first to verify the USB serial control connection.</div>
+<div class="note"><strong>Note:</strong> Complete the <a href="/ping/">Ping Example</a> first to verify the USB serial control connection.</div>
 
 ## Hardware setup
 

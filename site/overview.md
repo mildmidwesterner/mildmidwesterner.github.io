@@ -12,7 +12,7 @@ description: Programmable SPI peripheral emulator for testing embedded firmware 
 # RH01T9k: SPI Peripheral Emulator
 
 <p class="lead overview-intro">
-RH01T9k is a programmable SPI peripheral emulator for testing embedded firmware over a physical SPI bus. A Python API configures register values, SPI responses, and transaction behavior over UART.
+RH01T9k is a programmable SPI peripheral emulator that lets engineers test embedded firmware without a physical sensor or peripheral. A Python API configures repeatable register values, SPI responses, and transaction behavior while the real controller communicates over a physical SPI bus.
 </p>
 
 <div class="overview-board-frame">

@@ -12,7 +12,7 @@ description: Install the RH01T9k Python API, connect the board over USB, find it
 
 # Quick Start
 
-Install the Python API, connect the RH01T9k to the computer, and verify communication.
+This quick start installs the RH01T9k Python API, connects the board over USB, identifies its serial port, and verifies the control connection with Ping.
 
 ## 1. Connect the board
 
