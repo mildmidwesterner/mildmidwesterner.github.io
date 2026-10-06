@@ -9,6 +9,8 @@ description: Programmable SPI peripheral emulator for testing embedded firmware 
 
 <div class="eyebrow">Overview</div>
 
+<div class="note">Looking for a specific peripheral emulator setup for firmware testing? Small projects are welcome :) <a href="/contact/">Contact me</a>.</div>
+
 # RH01T9k: SPI Peripheral Emulator
 
 <p class="lead overview-intro">
