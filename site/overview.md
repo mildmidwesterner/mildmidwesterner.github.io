@@ -29,7 +29,7 @@ Built on the Tang Nano 9K FPGA, RH01T9k can replace an SPI sensor or peripheral 
 
 Physical sensors do not always provide the repeatable states, edge cases, or invalid responses needed for firmware testing.
 
-RH01T9k lets tests provide controlled SPI responses such as:
+The emulator (RH01T9k) lets tests provide controlled SPI responses such as:
 
 - incorrect device IDs
 - synthetic sensor data
@@ -38,13 +38,13 @@ RH01T9k lets tests provide controlled SPI responses such as:
 
 ## How it works
 
-The MCU runs its normal firmware while RH01T9k replaces the target SPI peripheral.
+The MCU runs its normal firmware while the emulator RH01T9k replaces the target SPI peripheral.
 
 <div class="diagram">
   MCU ⇄ SPI ⇄ RH01T9k ⇄ UART ⇄ Python
 </div>
 
-Python configures the emulated peripheral. The MCU then communicates with RH01T9k using normal SPI transactions.
+Python configures the emulated peripheral. The MCU then communicates with the emulator using normal SPI transactions.
 
 MOSI and MISO transactions can also be captured for debugging and automated test verification.
 

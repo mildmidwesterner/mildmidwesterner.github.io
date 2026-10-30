@@ -5,18 +5,18 @@ tags: docs
 title: Quick Start
 nav: Quick Start
 navExclude: true
-description: Install the RH01T9k Python API, connect the board over USB, find its serial port, and verify communication with Ping.
+description: Install the Python API, connect the board over USB, find its serial port, and verify communication with Ping.
 ---
 
 <div class="eyebrow">Getting Started</div>
 
 # Quick Start
 
-This quick start installs the RH01T9k Python API, connects the board over USB, identifies its serial port, and verifies the control connection with Ping.
+This quick start installs the Python API, connects the board over USB, identifies its serial port, and verifies the control connection with Ping.
 
 ## 1. Connect the board
 
-Connect the RH01T9k to the computer using a USB Type-C data cable. Confirm that the board powers on, then wait a few seconds for the computer to detect the serial port.
+Connect the SPI emulator to the computer using a USB Type-C data cable. Confirm that the board powers on, then wait a few seconds for the computer to detect the serial port.
 
 <div class="note"><strong>Note:</strong> A charge-only USB cable can power the board but cannot transfer data. Use a USB cable that supports data.</div>
 
@@ -24,9 +24,9 @@ Connect the RH01T9k to the computer using a USB Type-C data cable. Confirm that 
 
 ## 2. Install the Python API
 
-The RH01T9k Python API is on GitHub:
+The Python API is on GitHub:
 
-[RH01T9k Python API](https://github.com/mildmidwesterner/programmable-spi-slave-emulator/tree/main/python)
+[SPI Emulator Python API](https://github.com/mildmidwesterner/programmable-spi-slave-emulator/tree/main/python)
 
 The API supports Python 3.9 and newer.
 
@@ -46,7 +46,7 @@ python -m pip install .
 
 ## 3. Find the serial port
 
-Identify the serial port assigned to the RH01T9k.
+Identify the serial port assigned to the emulator.
 
 Examples:
 
@@ -93,7 +93,7 @@ PING OK
 status = 0x....
 ```
 
-If Ping succeeds, the Python API can communicate with the RH01T9k and the board is ready to configure for SPI emulation.
+If Ping succeeds, the Python API can communicate with the emulator and the board is ready to configure for SPI emulation.
 
 ## Next steps
 

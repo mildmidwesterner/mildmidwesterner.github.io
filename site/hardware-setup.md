@@ -16,9 +16,9 @@ Download the RTL, program it to a Tang Nano 9K, then connect the board to the SP
 
 ## Download the RTL
 
-The RH01T9k RTL is available on GitHub:
+The RTL is available on GitHub:
 
-[RH01T9k FPGA source](https://github.com/mildmidwesterner/programmable-spi-slave-emulator/tree/main/fpga)
+[SPI emulator FPGA source](https://github.com/mildmidwesterner/programmable-spi-slave-emulator/tree/main/fpga)
 
 The current project targets the Tang Nano 9K. Porting it to another FPGA board requires board-specific pin assignments, system clock configuration, and corresponding timestamp settings in the Python API.
 
@@ -31,7 +31,6 @@ The current project targets the Tang Nano 9K. Porting it to another FPGA board r
 * Use 3.3 V logic levels.
 * Connect a common ground between the SPI controller and RH01T9k.
 
-<div class="note"><strong>Caution:</strong> Do not connect incompatible I/O voltage levels directly to the emulator pins.</div>
 
 ## SPI requirements
 
@@ -46,7 +45,7 @@ The current project targets the Tang Nano 9K. Porting it to another FPGA board r
 
 ## USB serial control
 
-RH01T9k is configured from the computer through its USB serial connection.
+The emulator is configured from the computer through its USB serial connection.
 
 The control baud rate is fixed at:
 

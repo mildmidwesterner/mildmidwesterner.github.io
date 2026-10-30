@@ -4,7 +4,7 @@ layout: layouts/docs.njk
 tags: docs
 title: BMI160 SPI Sensor Emulator Demo
 nav: Demo
-description: Replace a BMI160 sensor with RH01T9k and test unchanged ESP32 firmware using repeatable, programmable SPI accelerometer data.
+description: Replace a BMI160 sensor with the emulator and test unchanged ESP32 firmware using repeatable, programmable SPI accelerometer data.
 ---
 
 <div class="eyebrow">Demo</div>
@@ -35,7 +35,7 @@ SSD1306 OLED
 
 The ESP32 first reads acceleration data from a physical BMI160 over SPI and displays X/Y/Z values on an OLED.
 
-The BMI160 is then replaced by the RH01T9k. The ESP32 firmware remains unchanged and continues issuing the same SPI transactions, while RH01T9k returns simulated BMI160 register data configured from Python.
+The BMI160 is then replaced by the RH01T9k emulator. The ESP32 firmware remains unchanged and continues issuing the same SPI transactions, while RH01T9k returns simulated BMI160 register data configured from Python.
 
 <video class="demo-video" controls preload="metadata">
   <source src="/assets/videos/bmi160_demo.mp4" type="video/mp4">
@@ -54,7 +54,7 @@ The same firmware is used with both the physical BMI160 and the RH01T9k emulator
 
 ## Python emulator script
 
-The following script configures RH01T9k as a BMI160-compatible SPI peripheral and generates a repeatable tilt sequence.
+The following script configures RH01T9k emulator as a BMI160-compatible SPI peripheral and generates a repeatable tilt sequence.
 
 ```python
 """
