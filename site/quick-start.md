@@ -18,8 +18,6 @@ This quick start installs the Python API, connects the board over USB, identifie
 
 Connect the SPI emulator to the computer using a USB Type-C data cable. Confirm that the board powers on, then wait a few seconds for the computer to detect the serial port.
 
-<div class="note"><strong>Note:</strong> A charge-only USB cable can power the board but cannot transfer data. Use a USB cable that supports data.</div>
-
 <div class="note"><strong>Note:</strong> Close any serial terminal, IDE monitor, or other program that may already be using the board's serial port.</div>
 
 ## 2. Install the Python API

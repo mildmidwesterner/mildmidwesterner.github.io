@@ -19,8 +19,6 @@ A successful Ping confirms that the board is connected and responding to command
 
 Connect RH01T9k to the computer using a USB Type-C data cable.
 
-<div class="note"><strong>Note:</strong> Use a USB cable that supports data. A charge-only cable can power the board but cannot provide serial communication.</div>
-
 Close any serial terminal, IDE monitor, or other program using the same serial port.
 
 ## Find the serial port
