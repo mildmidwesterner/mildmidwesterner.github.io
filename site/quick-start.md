@@ -24,7 +24,7 @@ Connect the RH01T9k to the computer using a USB Type-C data cable. Confirm that 
 
 ## 2. Install the Python API
 
-The RH01T9k Python API is open source and available on GitHub:
+The RH01T9k Python API is on GitHub:
 
 [RH01T9k Python API](https://github.com/mildmidwesterner/programmable-spi-slave-emulator/tree/main/python)
 

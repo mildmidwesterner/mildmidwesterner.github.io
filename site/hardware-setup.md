@@ -5,14 +5,22 @@ tags: docs
 title: Hardware Setup
 nav: Hardware Setup
 navExclude: true
-description: Wire RH01T9k to an SPI controller using the Tang Nano 9K pinout, 3.3 V logic levels, and supported SPI modes.
+description: Download the RTL and wire the Tang Nano 9K to an SPI controller
 ---
 
 <div class="eyebrow">Getting Started</div>
 
 # Hardware Setup
 
-Connect the RH01T9k to the SPI controller using the pinout and requirements below.
+Download the RTL, program it to a Tang Nano 9K, then connect the board to the SPI controller.
+
+## Download the RTL
+
+The RH01T9k RTL is available on GitHub:
+
+[RH01T9k FPGA source](https://github.com/mildmidwesterner/programmable-spi-slave-emulator/tree/main/fpga)
+
+The current project targets the Tang Nano 9K. Porting it to another FPGA board requires board-specific pin assignments, system clock configuration, and corresponding timestamp settings in the Python API.
 
 ## Tang Nano 9K pinout
 

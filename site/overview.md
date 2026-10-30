@@ -9,16 +9,16 @@ description: Programmable SPI peripheral emulator for testing embedded firmware 
 
 <div class="eyebrow">Overview</div>
 
-<div class="note">Looking for a specific peripheral emulator setup for firmware testing? Small projects are welcome :) <a href="/contact/">Contact me</a>.</div>
-
-# RH01T9k: SPI Peripheral Emulator
+# SPI Peripheral Emulator
 
 <p class="lead overview-intro">
-RH01T9k is a programmable SPI peripheral emulator that lets engineers test embedded firmware without a physical sensor or peripheral. A Python API configures repeatable register values, SPI responses, and transaction behavior while the real controller communicates over a physical SPI bus.
+This project is a programmable SPI peripheral emulator that lets engineers test embedded firmware without a physical sensor or peripheral. A Python API configures repeatable register values, SPI responses, and transaction behavior while the real controller communicates over a physical SPI bus. 
+
+The emulator is arbitrarily named *RH01T9k*. 
 </p>
 
 <div class="overview-board-frame">
-  <img class="overview-board-image" src="/assets/images/RH01T9k-overview.png" alt="RH01T9k SPI peripheral emulator connected to a microcontroller">
+  <img class="overview-board-image" src="/assets/images/RH01T9k-overview.png" alt="SPI peripheral emulator connected to a microcontroller">
 </div>
 
 <p class="lead overview-after-image">
